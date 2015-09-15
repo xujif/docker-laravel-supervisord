@@ -1,7 +1,8 @@
 #!/bin/bash
 while [ $# -ge 1 ]
 do
+    echo `date`
     eval $1;
-    sleep 1 ;
+    sleep 60 ;
 done
 echo "use schedule:run as params 1";
