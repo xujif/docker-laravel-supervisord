@@ -1,7 +1,0 @@
-#!/bin/bash
-while [ $# -ge 1 ]
-do
-    eval $1;
-    sleep 1 ;
-done
-echo "use schedule:run as params 1";
