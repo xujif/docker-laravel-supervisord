@@ -1,7 +1,7 @@
-FROM xujif/php5.6-cli
+FROM xujif/php7-cli
 MAINTAINER xujif <i@xujif.com>
 RUN yum install  -y  python-setuptools
 RUN easy_install supervisor
-WORKDIR /data/www
+WORKDIR /data/
 
 ENTRYPOINT ["supervisord","-n"]
